@@ -27,9 +27,10 @@ is worse than none at all. Open an issue instead, and if it turns out to be a qu
 a bug we will answer it there. Question-shaped issues are welcome and do not need the bug form
 filled in properly.
 
-Real answer on timing: this is a small team, and issues on the actively developed projects get a
-response within a few working days. Something filed against a project marked early or planning may
-sit longer, because there is not much there to support yet.
+Real answer on timing: this is a small team. Issues against a project the
+[profile page](https://github.com/MagmaMoose) marks as live get a response within a few working
+days. A project still marked in development has had no public release, so an issue there may sit
+longer and the answer may well be that the thing you hit is already on the list.
 
 ## Security problems
 
