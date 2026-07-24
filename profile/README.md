@@ -7,34 +7,30 @@ running infrastructure. The release spine. The security gate. The maintenance yo
 to trust. Each tool does a single job properly, the core is free and open, and there is a paid
 layer only where the work is genuinely worth paying for.
 
-Most of what you see here exists because we needed it ourselves first, and then kept it open
-because other people have the same problems.
+All of it exists because we needed it ourselves first, and then kept it open because other people
+have the same problems.
 
-## Products
+## What we build
 
 | Project | What it is | Status | License |
 | --- | --- | --- | --- |
 | **[Diatreme](https://github.com/MagmaMoose/diatreme)** | Your whole release spine as one GitHub Action. It computes the semantic version, cuts the tag, release and changelog, signs the release commit, promotes an already-scanned Docker image by digest, and ships a CycloneDX SBOM. Works on GitHub.com and Enterprise. | Live | MIT |
-| **[Dunmir](https://github.com/MagmaMoose/dunmir)** | Maintenance assurance for MikroTik RouterOS fleets. It proves that backups, config exports and updates actually happened and can be trusted, and fires a dead-man alert when an expected report goes missing. | Preview | Apache-2.0 |
+| **[Chargate](https://github.com/MagmaMoose/chargate)** | A security and lint gate built on MegaLinter that blocks only on the findings a pull request introduces. Inherited debt never blocks a merge, and the full SARIF still ships to DefectDojo. | Live | MIT |
+| **[Dunmir](https://github.com/MagmaMoose/dunmir)** | Maintenance assurance for MikroTik RouterOS fleets. It proves that backups, config exports and updates actually happened and can be trusted, and fires a dead-man alert when an expected report goes missing. | In development | Apache-2.0 |
+| **[Caldrith](https://github.com/MagmaMoose/caldrith)** | Configuration as code for GitHub. A self-hostable, multi-tenant App that reconciles your org and its repos against one `settings.yml`, and heals the drift when somebody changes a setting by hand. | In development | MIT |
+| **[Brimyr](https://github.com/MagmaMoose/brimyr)** | A patch coverage gate. It detects the repo's ecosystem, runs the tests with coverage instrumentation on, and gates on the coverage of the lines the pull request actually changed. | In development | MIT |
+| **[Securitybridge](https://github.com/MagmaMoose/securitybridge)** | A finding bus that syncs Dependency-Track and friends into DefectDojo, with zero-touch GitHub issue auto-push. | In development | MIT |
+| **[Dastgate](https://github.com/MagmaMoose/dastgate)** | Scheduled DAST with OWASP ZAP and Nuclei against deployed environments, reimported into DefectDojo. | In development | MIT |
+
+**Live** means released, documented and supported, so you can build on it today. **In development**
+means it works and we run it ourselves, but there has been no public release, so expect the
+interface to move, the docs to lag, and the odd rough edge. A public repository is not a promise
+that something is finished. If you want to use one of these anyway, open an issue and say so,
+because knowing somebody is out there changes what we prioritise.
 
 Product pages and quickstarts live at [magmamoose.com](https://magmamoose.com).
 
-## The tools we run the org on
-
-We build our own delivery platform in the open, so you can pick up the same pieces we use every
-day.
-
-| Project | What it is | Status | License |
-| --- | --- | --- | --- |
-| **[Caldrith](https://github.com/MagmaMoose/caldrith)** | Configuration as code for GitHub. A self-hostable, multi-tenant App that reconciles your org and its repos against one `settings.yml`, and heals the drift when somebody changes a setting by hand. | Live | MIT |
-| **[Chargate](https://github.com/MagmaMoose/chargate)** | A security and lint gate built on MegaLinter that blocks only on the findings a pull request introduces. Inherited debt never blocks a merge, and the full SARIF still ships to DefectDojo. | Live | MIT |
-| **[Brimyr](https://github.com/MagmaMoose/brimyr)** | A patch coverage gate. It detects the repo's ecosystem, runs the tests with coverage instrumentation on, and gates on the coverage of the lines the pull request actually changed. | Live | MIT |
-| **[Comment Commander](https://github.com/MagmaMoose/comment-commander)** | A self-hosted webhook that triages GitHub Copilot review comments, fixes them, and pushes verified, SSH-signed commits back to the branch. | Live | See repo |
-| **[Securitybridge](https://github.com/MagmaMoose/securitybridge)** | A finding bus that syncs Dependency-Track and friends into DefectDojo, with zero-touch GitHub issue auto-push. | Early | MIT |
-| **[Dastgate](https://github.com/MagmaMoose/dastgate)** | Scheduled DAST with OWASP ZAP and Nuclei against deployed environments, reimported into DefectDojo. | Early | MIT |
-
-There is more in the open if you go looking. [platform](https://github.com/MagmaMoose/platform) is
-the shared monorepo behind the hosted workers,
+There is more in the open if you go looking.
 [agent-skills](https://github.com/MagmaMoose/agent-skills) holds the AI agent skills we share
 across tools, [homebrew-tap](https://github.com/MagmaMoose/homebrew-tap) packages the CLIs, and
 [github-usage](https://github.com/MagmaMoose/github-usage) turns GitHub usage reports into
