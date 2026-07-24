@@ -1,32 +1,42 @@
-# Magma Moose
+<div align="center">
 
-**Small, sharp tools for teams that ship.**
+![Magma Moose. Small, sharp tools for teams that ship.](https://raw.githubusercontent.com/MagmaMoose/.github/main/profile/assets/banner.svg)
+
+[![Diatreme][b-diatreme]][diatreme]
+[![Chargate][b-chargate]][chargate]
+[![Dunmir][b-dunmir]][dunmir]
+[![Caldrith][b-caldrith]][caldrith]
+[![Brimyr][b-brimyr]][brimyr]
+[![Securitybridge][b-securitybridge]][securitybridge]
+[![Dastgate][b-dastgate]][dastgate]
+
+</div>
 
 Magma Moose builds focused, open-core tools for the unglamorous parts of shipping software and
-running infrastructure. The release spine. The security gate. The maintenance you have to be able
-to trust. Each tool does a single job properly, the core is free and open, and there is a paid
-layer only where the work is genuinely worth paying for.
+running infrastructure: the release spine, the maintenance you have to be able to trust. Free and
+open at the core, with a paid layer where the work is worth paying for.
 
-All of it exists because we needed it ourselves first, and then kept it open because other people
-have the same problems.
+## Products
 
-## What we build
+Each one does a single job properly. Open source at the core, hosted or Pro where it earns its
+keep.
 
 | Project | What it is | Status | License |
 | --- | --- | --- | --- |
-| **[Diatreme](https://github.com/MagmaMoose/diatreme)** | Your whole release spine as one GitHub Action. It computes the semantic version, cuts the tag, release and changelog, signs the release commit, promotes an already-scanned Docker image by digest, and ships a CycloneDX SBOM. Works on GitHub.com and Enterprise. | Live | MIT |
-| **[Chargate](https://github.com/MagmaMoose/chargate)** | A security and lint gate built on MegaLinter that blocks only on the findings a pull request introduces. Inherited debt never blocks a merge, and the full SARIF still ships to DefectDojo. | Live | MIT |
-| **[Dunmir](https://github.com/MagmaMoose/dunmir)** | Maintenance assurance for MikroTik RouterOS fleets. It proves that backups, config exports and updates actually happened and can be trusted, and fires a dead-man alert when an expected report goes missing. | In development | Apache-2.0 |
-| **[Caldrith](https://github.com/MagmaMoose/caldrith)** | Configuration as code for GitHub. A self-hostable, multi-tenant App that reconciles your org and its repos against one `settings.yml`, and heals the drift when somebody changes a setting by hand. | In development | MIT |
-| **[Brimyr](https://github.com/MagmaMoose/brimyr)** | A patch coverage gate. It detects the repo's ecosystem, runs the tests with coverage instrumentation on, and gates on the coverage of the lines the pull request actually changed. | In development | MIT |
-| **[Securitybridge](https://github.com/MagmaMoose/securitybridge)** | A finding bus that syncs Dependency-Track and friends into DefectDojo, with zero-touch GitHub issue auto-push. | In development | MIT |
-| **[Dastgate](https://github.com/MagmaMoose/dastgate)** | Scheduled DAST with OWASP ZAP and Nuclei against deployed environments, reimported into DefectDojo. | In development | MIT |
+| **[Diatreme][diatreme]** | Your whole release spine as one GitHub Action: semantic versioning, releases, signed commits, provenance-verified Docker promotion and SBOMs, on GitHub.com or Enterprise. | Live | MIT |
+| **[Chargate][chargate]** | A security and lint gate built on MegaLinter that blocks only on the findings a pull request introduces. Inherited debt never blocks a merge, and the full SARIF still ships to DefectDojo. | Live | MIT |
+| **[Dunmir][dunmir]** | Maintenance assurance for MikroTik RouterOS fleets. Prove the backups, exports, and updates actually happened, and can be trusted, with dead-man alerts and a signed audit trail. | Preview | Apache-2.0 |
+| **[Caldrith][caldrith]** | Configuration as code for GitHub. A self-hostable, multi-tenant App that reconciles your org and its repos against one `settings.yml`, and heals the drift when somebody changes a setting by hand. | In development | MIT |
+| **[Brimyr][brimyr]** | A patch coverage gate. It detects the repo's ecosystem, runs the tests with coverage instrumentation on, and gates on the coverage of the lines the pull request actually changed. | In development | MIT |
+| **[Securitybridge][securitybridge]** | A finding bus that syncs Dependency-Track and friends into DefectDojo, with zero-touch GitHub issue auto-push. | In development | MIT |
+| **[Dastgate][dastgate]** | Scheduled DAST with OWASP ZAP and Nuclei against deployed environments, reimported into DefectDojo. | In development | MIT |
 
-**Live** means released, documented and supported, so you can build on it today. **In development**
-means it works and we run it ourselves, but there has been no public release, so expect the
-interface to move, the docs to lag, and the odd rough edge. A public repository is not a promise
-that something is finished. If you want to use one of these anyway, open an issue and say so,
-because knowing somebody is out there changes what we prioritise.
+**Live** means released, documented and supported, so you can build on it today. **Preview** means
+it is out and usable, with the interface still free to move before it settles. **In development**
+means it works and we run it ourselves, but there has been no public release, so expect rough
+edges and lagging docs. A public repository is not a promise that something is finished. If you
+want to use one of these anyway, open an issue and say so, because knowing somebody is out there
+changes what we prioritise.
 
 Product pages and quickstarts live at [magmamoose.com](https://magmamoose.com).
 
@@ -58,4 +68,20 @@ The full detail is in
 - **Bugs and feature requests:** open an issue on the repo in question.
 - **Security:** please do not use a public issue. Follow
   [our security policy](https://github.com/MagmaMoose/.github/blob/main/SECURITY.md) instead.
-- **Anything else,** including commercial and Pro licensing: `caleb@magmamoose.com`.
+- **Anything else,** including commercial and Pro licensing: `hello@magmamoose.com`.
+
+[diatreme]: https://github.com/MagmaMoose/diatreme
+[chargate]: https://github.com/MagmaMoose/chargate
+[dunmir]: https://github.com/MagmaMoose/dunmir
+[caldrith]: https://github.com/MagmaMoose/caldrith
+[brimyr]: https://github.com/MagmaMoose/brimyr
+[securitybridge]: https://github.com/MagmaMoose/securitybridge
+[dastgate]: https://github.com/MagmaMoose/dastgate
+
+[b-diatreme]: https://img.shields.io/badge/Diatreme-A855F7?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTIuNSA5LjIgNi44IDMuNWgxMC40bDQuMyA1LjdMMTIgMjEuNXoiLz48L3N2Zz4%3D&logoColor=white
+[b-chargate]: https://img.shields.io/badge/Chargate-A855F7?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEyIDIgMjAuNSA1LjJWMTFjMCA1LjQtMy42IDkuMi04LjUgMTFDNy4xIDIwLjIgMy41IDE2LjQgMy41IDExVjUuMnoiLz48L3N2Zz4%3D&logoColor=white
+[b-dunmir]: https://img.shields.io/badge/Dunmir-8B5CF6?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTcuNSAzaDlsNCA0LjV2OWwtNCA0LjVoLTlsLTQtNC41di05eiIvPjwvc3ZnPg%3D%3D&logoColor=white
+[b-caldrith]: https://img.shields.io/badge/Caldrith-3D2A63?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEyIDIgMjAuNSA3djEwTDEyIDIyIDMuNSAxN1Y3eiIvPjwvc3ZnPg%3D%3D&logoColor=white
+[b-brimyr]: https://img.shields.io/badge/Brimyr-3D2A63?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPGNpcmNsZSBmaWxsPSIjZmZmZmZmIiBjeD0iMTIiIGN5PSIxMiIgcj0iOS41Ii8%2BPC9zdmc%2B&logoColor=white
+[b-securitybridge]: https://img.shields.io/badge/Securitybridge-3D2A63?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEyIDMgMjEuNSAxOS41aC0xOXoiLz48L3N2Zz4%3D&logoColor=white
+[b-dastgate]: https://img.shields.io/badge/Dastgate-3D2A63?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTEyIDIuNSAxOS41IDEzYTcuNSA3LjUgMCAxIDEtMTUgMHoiLz48L3N2Zz4%3D&logoColor=white

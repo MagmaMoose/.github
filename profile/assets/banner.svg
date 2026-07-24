@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="Magma Moose. Small, sharp tools for teams that ship. Release, security, network, governance, quality.">
+  <title>Magma Moose</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#140a24"/>
+      <stop offset="64%" stop-color="#0a0612"/>
+      <stop offset="100%" stop-color="#060410"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+    <!-- .brand .dot from assets/styles.css: linear-gradient(135deg, accent, accent-soft) -->
+    <linearGradient id="tileLive" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="tileGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="0" rx="620" ry="330" fill="url(#glowA)"/>
+  <ellipse cx="1100" cy="70" rx="460" ry="280" fill="url(#glowB)"/>
+
+  <!-- Wordmark, matching the nav brand on magmamoose.com. -->
+  <g filter="url(#tileGlow)">
+    <rect x="404" y="76" width="34" height="34" rx="11" fill="url(#tileLive)"/>
+  </g>
+  <text x="452" y="106" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="42" font-weight="800" letter-spacing="1" fill="#ece7f8">MAGMA MOOSE</text>
+  <text x="640" y="158" text-anchor="middle"
+        font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="23" fill="#a99fc4">Small, sharp tools for teams that ship.</text>
+
+  <!-- One tile per tool, left to right in profile order. Bright tiles are live,
+       outlined tiles are still in development. Placeholder cuts until the real
+       product logos land: swap the inner path and keep the tile. -->
+  <g>
+    <!-- Diatreme, live: brilliant cut -->
+    <g filter="url(#tileGlow)"><rect x="332" y="212" width="64" height="64" rx="18" fill="url(#tileLive)"/></g>
+    <g transform="translate(348,228) scale(1.333)" fill="#1a0b2e"><path d="M2.5 9.2 6.8 3.5h10.4l4.3 5.7L12 21.5z"/></g>
+    <!-- Chargate, live: shield cut -->
+    <g filter="url(#tileGlow)"><rect x="424" y="212" width="64" height="64" rx="18" fill="url(#tileLive)"/></g>
+    <g transform="translate(440,228) scale(1.333)" fill="#1a0b2e"><path d="M12 2 20.5 5.2V11c0 5.4-3.6 9.2-8.5 11C7.1 20.2 3.5 16.4 3.5 11V5.2z"/></g>
+    <!-- Dunmir, preview: emerald cut -->
+    <rect x="516" y="212" width="64" height="64" rx="18" fill="#22163f" stroke="#4a3570" stroke-width="1.5"/>
+    <g transform="translate(532,228) scale(1.333)" fill="#c084fc"><path d="M7.5 3h9l4 4.5v9l-4 4.5h-9l-4-4.5v-9z"/></g>
+    <!-- Caldrith: hexagon cut -->
+    <rect x="608" y="212" width="64" height="64" rx="18" fill="#22163f" stroke="#4a3570" stroke-width="1.5"/>
+    <g transform="translate(624,228) scale(1.333)" fill="#a99fc4"><path d="M12 2 20.5 7v10L12 22 3.5 17V7z"/></g>
+    <!-- Brimyr: round cut -->
+    <rect x="700" y="212" width="64" height="64" rx="18" fill="#22163f" stroke="#4a3570" stroke-width="1.5"/>
+    <g transform="translate(716,228) scale(1.333)" fill="#a99fc4"><circle cx="12" cy="12" r="9.5"/></g>
+    <!-- Securitybridge: trillion cut -->
+    <rect x="792" y="212" width="64" height="64" rx="18" fill="#22163f" stroke="#4a3570" stroke-width="1.5"/>
+    <g transform="translate(808,228) scale(1.333)" fill="#a99fc4"><path d="M12 3 21.5 19.5h-19z"/></g>
+    <!-- Dastgate: pear cut -->
+    <rect x="884" y="212" width="64" height="64" rx="18" fill="#22163f" stroke="#4a3570" stroke-width="1.5"/>
+    <g transform="translate(900,228) scale(1.333)" fill="#a99fc4"><path d="M12 2.5 19.5 13a7.5 7.5 0 1 1-15 0z"/></g>
+  </g>
+
+  <rect x="440" y="312" width="400" height="1" fill="url(#rule)"/>
+
+  <text x="640" y="352" text-anchor="middle"
+        font-family="'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+        font-size="16" letter-spacing="4" fill="#a99fc4">RELEASE<tspan fill="#a855f7"> &#183; </tspan>SECURITY<tspan fill="#a855f7"> &#183; </tspan>NETWORK<tspan fill="#a855f7"> &#183; </tspan>GOVERNANCE<tspan fill="#a855f7"> &#183; </tspan>QUALITY</text>
+</svg>

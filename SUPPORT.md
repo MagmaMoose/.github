@@ -39,6 +39,6 @@ vulnerability privately, and that route gets attention faster than a public issu
 
 ## Commercial support, Pro licensing and hosted plans
 
-Email **caleb@magmamoose.com**. That is also the address for anything you would rather not discuss
+Email **hello@magmamoose.com**. That is also the address for anything you would rather not discuss
 in public, including procurement questions, security questionnaires, and whether we can support a
 setup that is unusual enough not to fit an issue.

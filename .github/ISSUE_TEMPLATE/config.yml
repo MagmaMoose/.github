@@ -12,5 +12,5 @@ contact_links:
     url: https://github.com/MagmaMoose/.github/blob/main/CONTRIBUTING.md
     about: Branch and commit conventions, what CI runs on your pull request, and how releases work.
   - name: Commercial support and Pro licensing
-    url: mailto:caleb@magmamoose.com
+    url: mailto:hello@magmamoose.com
     about: Hosted plans, licensing, procurement and security questionnaires.
