@@ -56,9 +56,8 @@ In scope:
 - The source code of any public repository in this organization.
 - The published artefacts they produce, which includes the Diatreme GitHub Action on the
   Marketplace, the container images on GHCR, the Helm charts, and the Homebrew formulae.
-- The hosted services those products depend on, which currently means the Diatreme token broker
-  and GitHub App, the Dunmir control plane at `dunmir.magmamoose.com`, and the Caldrith GitHub
-  App.
+- The hosted services those tools depend on, which currently means the Diatreme token broker and
+  GitHub App, the Dün Mir control plane at `dunmir.magmamoose.com`, and the Caldrith GitHub App.
 - `magmamoose.com` and its subdomains.
 
 Out of scope, unless you can show real impact:

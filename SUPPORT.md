@@ -10,8 +10,8 @@ anything we could paste into a reply.
 - Every repository has a README with a quickstart, and the bigger ones have a `docs/` directory.
 - [Diatreme](https://magmamoose.github.io/diatreme/) has a full documentation site covering
   inputs, permissions, versioning tools and publishing targets.
-- [magmamoose.com](https://magmamoose.com) has the product overviews if you are still working out
-  whether a tool is the right shape for your problem.
+- [magmamoose.com](https://magmamoose.com) has the tool overviews if you are still working out
+  whether one is the right shape for your problem.
 
 ## Bugs and feature requests
 
@@ -37,8 +37,13 @@ longer and the answer may well be that the thing you hit is already on the list.
 Do not use an issue for these. Our [security policy](SECURITY.md) explains how to report a
 vulnerability privately, and that route gets attention faster than a public issue would.
 
-## Commercial support, Pro licensing and hosted plans
+## Engineering work
 
-Email **caleb@magmamoose.com**. That is also the address for anything you would rather not discuss
+The tools are free and there is no paid tier, so there is nothing to buy here. The other half of
+Magma Moose is engineering services: platform and DevOps, cloud, infrastructure as code, network,
+security, and monitoring. If you would rather somebody came and fixed the underlying problem than
+filed an issue about a symptom, that is the conversation to have.
+
+Email **hello@magmamoose.com**. That is also the address for anything you would rather not discuss
 in public, including procurement questions, security questionnaires, and whether we can support a
 setup that is unusual enough not to fit an issue.
