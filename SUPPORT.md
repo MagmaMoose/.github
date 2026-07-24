@@ -39,10 +39,9 @@ vulnerability privately, and that route gets attention faster than a public issu
 
 ## Engineering work
 
-The tools are free and there is no paid tier, so there is nothing to buy here. The other half of
-Magma Moose is engineering services: platform and DevOps, cloud, infrastructure as code, network,
-security, and monitoring. If you would rather somebody came and fixed the underlying problem than
-filed an issue about a symptom, that is the conversation to have.
+The other half of Magma Moose is engineering services: platform and DevOps, cloud, infrastructure
+as code, network, security, and monitoring. If you would rather somebody came and fixed the
+underlying problem than filed an issue about a symptom, that is the conversation to have.
 
 Email **hello@magmamoose.com**. That is also the address for anything you would rather not discuss
 in public, including procurement questions, security questionnaires, and whether we can support a
