@@ -1,0 +1,89 @@
+name: Bug report
+description: Something is broken or behaves differently to what the docs say.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        If you have found a security vulnerability, please close this form and follow our
+        [security policy](https://github.com/MagmaMoose/.github/blob/main/SECURITY.md) instead.
+        Security issues should never go in a public issue.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the behaviour you saw, and what you expected instead.
+      placeholder: |
+        I expected the release to be tagged v1.4.0, but it came out as v1.3.1 even though the
+        branch had a feat: commit on it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: >
+        The smallest set of steps that shows the problem. A minimal repository, workflow file
+        or config is the single most useful thing you can give us.
+      placeholder: |
+        1. Use this workflow file: ...
+        2. Merge a commit with the message "feat: ..."
+        3. Look at the release that gets cut
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release, tag, chart version or commit SHA you are running.
+      placeholder: "v2.6.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: >
+        Whatever is relevant. GitHub.com or Enterprise, runner type, operating system,
+        language and toolchain versions, RouterOS version, Kubernetes version.
+      placeholder: |
+        GitHub Enterprise Cloud, ubuntu-latest hosted runner, Python 3.12
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: >
+        Relevant log lines or error output. Please redact tokens, secrets and internal
+        hostnames before pasting. This box renders as a code block, so no backticks needed.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Workarounds you found, when it started, or anything that seems related.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and this is not already reported.
+          required: true
+        - label: I am on the current release, or I have said above why I cannot be.
+          required: true
+        - label: There are no secrets, tokens or customer data in what I pasted.
+          required: true
