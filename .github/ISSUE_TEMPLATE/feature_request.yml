@@ -1,0 +1,61 @@
+name: Feature request
+description: Suggest a capability or a change to how something works.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Our tools are deliberately small, and the most common reason we say no to an idea is
+        that it would make one tool do a second job. So please lead with the problem rather
+        than the solution. It gives us the best chance of finding an answer that fits.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: >
+        What are you trying to do, and where does the current behaviour get in your way?
+        Tell us about the real situation rather than the feature you have in mind.
+      placeholder: |
+        We run three versioning tools across the org and every repo needs a slightly
+        different workflow file, so a change to the release process means editing 40 repos.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you would like to happen
+      description: Your idea for solving it, if you have one. It is fine to leave this open.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you have tried or considered
+      description: >
+        Workarounds you are using today, or other approaches you rejected and why. This
+        often tells us more about the shape of the problem than the proposal does.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: contributing
+    attributes:
+      label: Would you be up for implementing this?
+      description: No pressure either way. It just helps us plan.
+      options:
+        - I would like to build it myself
+        - I could help if someone points me at the right place
+        - I would rather someone else built it
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and this is not already requested.
+          required: true
