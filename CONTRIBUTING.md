@@ -127,11 +127,11 @@ If you just have a question, [SUPPORT.md](SUPPORT.md) says where to put it.
 ## Licensing
 
 Contributions are accepted under the licence of the repository you are contributing to, which is
-in its `LICENSE` file. Most of the org is MIT, and Dunmir is Apache-2.0. By opening a pull request
+in its `LICENSE` file. Most of the org is MIT, and Dün Mir is Apache-2.0. By opening a pull request
 you confirm you have the right to submit the code under that licence.
 
-The paid layers of our products live in separate private repositories, so nothing you contribute
-here disappears behind a paywall.
+There is no paid tier to disappear behind. The open-source version of every Magma Moose tool is
+the whole tool, so what you contribute stays where anyone can use it.
 
 ## Conduct
 

@@ -4,7 +4,7 @@ This is the Magma Moose organization's meta repository. It holds two things: the
 see at [github.com/MagmaMoose](https://github.com/MagmaMoose), and the default community health
 files that every other repo in the org inherits.
 
-Nothing here ships to users. If you are looking for the products, start at
+Nothing here ships to users. If you are looking for the tools, start at
 [magmamoose.com](https://magmamoose.com) or the [profile page](https://github.com/MagmaMoose).
 
 ## What is in here
@@ -12,6 +12,7 @@ Nothing here ships to users. If you are looking for the products, start at
 | Path | What it does |
 | --- | --- |
 | [`profile/README.md`](profile/README.md) | Rendered as the organization profile page. This is the front door, so keep it current. |
+| [`profile/assets/`](profile/assets) | The profile banner. Generated, not drawn: it is `githubBanner()` in the website repo's `brand/generate/gen.js`, copied here because this repo is public and that one is not. To change it, change the generator, run the brand build, and recopy. |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Contributor Covenant 2.1, with our enforcement contact filled in. |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to work in any Magma Moose repo: branches, commits, reviews, releases. |
 | [`SECURITY.md`](SECURITY.md) | How to report a vulnerability privately, and what happens after you do. |
@@ -34,7 +35,7 @@ Two consequences are worth remembering:
 
 ## What is deliberately not here
 
-- **No `FUNDING.yml`.** Magma Moose is a commercial open-core company rather than a
+- **No `FUNDING.yml`.** Magma Moose is a studio funded by engineering work rather than a
   donation-funded project, so a sponsor button would be misleading.
 - **No `workflow-templates/`.** Starter workflows would duplicate the real thing and then drift
   from it. Shared CI, security and release workflows are reconciled onto every repo by

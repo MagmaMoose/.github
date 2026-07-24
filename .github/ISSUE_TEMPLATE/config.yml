@@ -7,10 +7,10 @@ contact_links:
     about: Please do not open a public issue. Use private vulnerability reporting instead.
   - name: Documentation
     url: https://magmamoose.com
-    about: Product overviews, quickstarts and the per-project documentation sites.
+    about: Tool overviews, quickstarts and the per-project documentation sites.
   - name: How to contribute
     url: https://github.com/MagmaMoose/.github/blob/main/CONTRIBUTING.md
     about: Branch and commit conventions, what CI runs on your pull request, and how releases work.
-  - name: Commercial support and Pro licensing
-    url: mailto:caleb@magmamoose.com
-    about: Hosted plans, licensing, procurement and security questionnaires.
+  - name: Engineering services
+    url: mailto:hello@magmamoose.com
+    about: Platform, cloud, infrastructure, network and security engineering, plus procurement and security questionnaires.
