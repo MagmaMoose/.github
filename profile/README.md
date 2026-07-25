@@ -2,8 +2,6 @@
 
 ![Magma Moose. Platform, cloud, infrastructure, network and security.](https://raw.githubusercontent.com/MagmaMoose/.github/main/profile/assets/magma-moose-github-banner.png)
 
-**Platform engineering and developer tooling that helps teams ship.**
-
 [![Diatreme][b-diatreme]][diatreme] [![Chargate][b-chargate]][chargate] [![Dün Mir][b-dunmir]][dunmir] [![Caldrith][b-caldrith]][caldrith] [![Brimyr][b-brimyr]][brimyr] [![Dastgate][b-dastgate]][dastgate]
 
 </div>
@@ -14,8 +12,8 @@ products of their own. Today we do both. We take on platform, cloud, network and
 engineering, and we build and maintain our own tools, most of them open source.
 
 The focus is the layer that makes everything else faster and safer to ship: CI/CD and release
-automation, infrastructure as code, testing and code quality, GitHub automation and governance,
-and the tooling growing up around AI agents.
+automation, infrastructure as code, testing and code quality, and GitHub automation and
+governance.
 
 ## The tools
 
@@ -36,20 +34,9 @@ what we prioritise.
 
 There is more in the open beyond the tools that carry a stone of their own.
 [infra](https://github.com/MagmaMoose/infra) is unified infrastructure management,
-[agent-skills](https://github.com/MagmaMoose/agent-skills) is one source of AI agent skills for
-Claude, Codex and in-cluster agents, [homebrew-tap](https://github.com/MagmaMoose/homebrew-tap)
-packages the CLIs, and [github-usage](https://github.com/MagmaMoose/github-usage) turns GitHub
-usage reports into something you can actually read.
-
-## Nothing held back
-
-Every Magma Moose tool is open source and free to run. Read it, fork it, trust it. No key is
-required to ship with it in production.
-
-The open-source version is the whole tool. No features are fenced off, there is no trial clock,
-and there is no paid tier waiting to unlock something you already need. We build these because we
-kept hitting gaps we could not find a good answer to, we build them to our own standard, and then
-we give them away.
+[homebrew-tap](https://github.com/MagmaMoose/homebrew-tap) packages the CLIs, and
+[github-usage](https://github.com/MagmaMoose/github-usage) turns GitHub usage reports into
+something you can actually read.
 
 ## Working with us
 

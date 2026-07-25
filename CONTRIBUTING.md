@@ -130,9 +130,6 @@ Contributions are accepted under the licence of the repository you are contribut
 in its `LICENSE` file. Most of the org is MIT, and Dün Mir is Apache-2.0. By opening a pull request
 you confirm you have the right to submit the code under that licence.
 
-There is no paid tier to disappear behind. The open-source version of every Magma Moose tool is
-the whole tool, so what you contribute stays where anyone can use it.
-
 ## Conduct
 
 Everyone taking part is covered by our [Code of Conduct](CODE_OF_CONDUCT.md). It is the
