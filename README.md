@@ -11,8 +11,7 @@ Nothing here ships to users. If you are looking for the tools, start at
 
 | Path | What it does |
 | --- | --- |
-| [`profile/README.md`](profile/README.md) | Rendered as the organization profile page. This is the front door, so keep it current. |
-| [`profile/assets/`](profile/assets) | The profile banner. Generated, not drawn: it is `githubBanner()` in the website repo's `brand/generate/gen.js`, copied here because this repo is public and that one is not. To change it, change the generator, run the brand build, and recopy. |
+| [`profile/README.md`](profile/README.md) | Rendered as the organization profile page. This is the front door, so keep it current. The banner at the top is `githubBanner()` from the website repo's `brand/generate/gen.js`, served live from the deployed site (`https://www.magmamoose.com/brand/png/github/magma-moose-github-banner-2400x400.png`) — the website repo is private, but the site is public, so there is no copy to keep in sync here. To change it, edit the generator and redeploy the site. |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Contributor Covenant 2.1, with our enforcement contact filled in. |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to work in any Magma Moose repo: branches, commits, reviews, releases. |
 | [`SECURITY.md`](SECURITY.md) | How to report a vulnerability privately, and what happens after you do. |
