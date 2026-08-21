@@ -1,6 +1,6 @@
 <div align="center">
 
-![Magma Moose. Platform, cloud, infrastructure, network and security.](https://raw.githubusercontent.com/MagmaMoose/.github/main/profile/assets/magma-moose-github-banner.png)
+![Magma Moose. Platform, cloud, infrastructure, network and security.](https://www.magmamoose.com/brand/png/github/magma-moose-github-banner-2400x400.png)
 
 [![Diatreme][b-diatreme]][diatreme] [![Chargate][b-chargate]][chargate] [![Brimyr][b-brimyr]][brimyr] [![Draventis][b-draventis]][draventis] [![Ponvara][b-ponvara]][ponvara] [![Tremvok][b-tremvok]][tremvok]
 
